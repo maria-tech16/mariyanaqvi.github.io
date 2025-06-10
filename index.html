@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32.png?text=M">
+
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">My Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-blue-300">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg">Third-year BSc IT student specializing in AI, Data Science, automation, and web development.</p>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+               I’m a third-year BSc IT student passionate about technology and software development. I have completed two internships: an On-the-Job Training (OJT) internship in AI and Data Science, where I gained hands-on experience with real-world datasets and machine learning tools, and another internship focused on building a comprehensive AI project involving data visualization, a Streamlit chatbot, and machine learning models. I specialize in automation, web development (frontend and basic backend), and am currently enhancing my Python skills through platforms like Coursera. I’m proficient in tools like Visual Studio Code, Oracle, and MS Office, and I enjoy creating impactful projects to solve real-world problems
+            </p>
+        </div>
+    </section>
+
+  <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Programming</h3>
+                    <ul class="text-gray-700 list-disc list-inside">
+                        <li>Python (Intermediate, currently learning)</li>
+                        <li>VBA (Automation in MS Excel)</li>
+                        <li>HTML, CSS, JavaScript (Frontend Development)</li>
+                        <li>Basic Backend (PHP with XAMPP)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Tools & Platforms</h3>
+                    <ul class="text-gray-700 list-disc list-inside">
+                        <li>Visual Studio Code</li>
+                        <li>Oracle</li>
+                        <li>XAMPP</li>
+                        <li>Canva</li>
+                        <li>MS Office (Word, Excel, PowerPoint)</li>
+                        <li>Power BI</li>
+                        <li>Streamlit</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Other Skills</h3>
+                    <ul class="text-gray-700 list-disc list-inside">
+                        <li>Automation (VBA scripts, Python scripts)</li>
+                        <li>Web Development (Frontend & Basic Backend)</li>
+                        <li>Data Visualization (Python, Excel, Power BI)</li>
+                        <li>AI & Data Science (Internship Experience)</li>
+                        <li>Machine Learning (Regression, Classification)</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">AI Internship Project: Data Visualization, Chatbot, and ML Models</h3>
+                    <p class="text-gray-700">
+                        During my internship, I completed a multi-task project: (1) Built a Power BI dashboard and performed data analysis on the Amazon Sales dataset using Python (pandas, seaborn). (2) Developed a Streamlit chatbot with a chatting interface using if-else logic, hosted on Streamlit Community Cloud. (3) Created regression and classification ML models using Kaggle datasets, calculating accuracy and error metrics. All code is available on GitHub: <a href="https://github.com/mariyanaqvi/amazon-sales-analysis" class="text-blue-600 hover:underline">Analysis</a>, <a href="https://github.com/mariyanaqvi/streamlit-chatbot" class="text-blue-600 hover:underline">Chatbot</a>, <a href="https://github.com/mariyanaqvi/ml-models" class="text-blue-600 hover:underline">ML Models</a>. Chatbot demo: <a href="https://your-chatbot-app.streamlit.app" class="text-blue-600 hover:underline">Live Demo</a>.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">AI Sales Prediction Model</h3>
+                    <p class="text-gray-700">
+                        Developed during my OJT internship in AI and Data Science, I built a sales prediction model using Python and libraries like pandas and scikit-learn. Analyzed a sales dataset, performed data cleaning, and applied machine learning algorithms to predict future sales trends.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Python Learning Journey</h3>
+                    <p class="text-gray-700">
+                        I’m currently taking a Python course on Coursera, where I’ve learned to write scripts, debug code, and create small projects like a calculator and data visualizations.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                    <p class="text-gray-700">
+                        This website! Built with HTML, Tailwind CSS, and JavaScript to showcase my skills and projects.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Weather App with Python</h3>
+                    <p class="text-gray-700">
+                        A small Python project where I used an API to fetch and display weather data for any city. Built while learning on Coursera, it helped me understand APIs and data handling.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Excel Automation with VBA</h3>
+                    <p class="text-gray-700">
+                        Created a VBA script to automate data formatting and calculations in Excel, saving time on repetitive tasks. Used variables with Dim statements to manage data efficiently.
+                    </p>
+                </div>
+            </div>
+               
+                
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <p class="text-lg mb-4">Email: mariyanaqvi672@gmail.com</p>
+            <p class="text-lg">LinkedIn:<a href="https://www.linkedin.com/in/mariya-naqvi-9a7198285" class="hover:underline">mariya-naqvi-9a7198285</a>
+            </p>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2025 Mariya Naqvi. All rights reserved.</p>
+        <p><a href="https://mariyanaqvi.github.io" class="text-blue-300 hover:underline">GitHub Profile</a></p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
