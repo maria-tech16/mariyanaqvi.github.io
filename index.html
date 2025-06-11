@@ -238,6 +238,44 @@
             overflow: hidden;
             border-right: 2px solid #a855f7;
         }
+        /* Responsive Fixes for Mobile Screens */
+@media (max-width: 768px) {
+    /* Navigation Bar Responsiveness */
+    nav div[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    nav ul {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        margin-top: 1rem;
+    }
+    nav ul li a {
+        font-size: 1rem !important;
+    }
+
+    /* Hero Section Text Scaling */
+    h1[style*="font-size: 3.75rem"] {
+        font-size: 2.25rem !important;
+    }
+    p[style*="font-size: 1.5rem"] {
+        font-size: 1.125rem !important;
+    }
+    p[style*="font-size: 1.25rem"] {
+        font-size: 1rem !important;
+    }
+
+    /* Project Grid Stays Single Column */
+    section div[style*="grid-template-columns: 1fr;"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Skills Grid: 1 column on small screen */
+    section#skills div[style*="grid-template-columns: 1fr;"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
     </style>
 </body>
 </html>
