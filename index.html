@@ -3,61 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="https://via.placeholder.com/32.png?text=M">
-
+    <meta name="description" content="Portfolio of Mariya Naqvi, a third-year BSc IT student specializing in AI, Data Science, automation, and web development.">
+    <title>My Portfolio - Mariya Naqvi</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
     <!-- Navigation Bar -->
-    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold">My Portfolio</h1>
-            <ul class="flex space-x-6">
-                <li><a href="#home" class="hover:underline">Home</a></li>
-                <li><a href="#about" class="hover:underline">About</a></li>
-                <li><a href="#projects" class="hover:underline">Projects</a></li>
-                <li><a href="#contact" class="hover:underline">Contact</a></li>
+    <nav id="navbar" style="background: linear-gradient(90deg, rgba(88, 28, 135, 0.9), rgba(147, 51, 234, 0.9)); backdrop-filter: blur(10px); color: #fff; padding: 1rem; position: fixed; width: 100%; top: 0; z-index: 20; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s ease;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(to right, #a855f7, #ec4899); -webkit-background-clip: text; color: transparent;">Mariya Naqvi</h1>
+            <ul style="display: flex; gap: 1.5rem; list-style: none;">
+                <li><a href="#home" style="color: #d8b4fe; text-decoration: none; transition: all 0.3s ease;">Home</a></li>
+                <li><a href="#about" style="color: #d8b4fe; text-decoration: none; transition: all 0.3s ease;">About</a></li>
+                <li><a href="#skills" style="color: #d8b4fe; text-decoration: none; transition: all 0.3s ease;">Skills</a></li>
+                <li><a href="#projects" style="color: #d8b4fe; text-decoration: none; transition: all 0.3s ease;">Projects</a></li>
+                <li><a href="#contact" style="color: #d8b4fe; text-decoration: none; transition: all 0.3s ease;">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-blue-300">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-            <p class="text-lg">Third-year BSc IT student specializing in AI, Data Science, automation, and web development.</p>
-
+    <section id="home" style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95); position: relative; overflow: hidden; padding-top: 4rem;">
+        <!-- Geometric Background Pattern -->
+        <div style="position: absolute; inset: 0; background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 20px); opacity: 0.5; animation: fadeInPattern 2s ease-in-out forwards;"></div>
+        <div style="text-align: center; z-index: 10;">
+            <div style="background: rgba(17, 24, 39, 0.7); padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); border: 1px solid #a855f7; max-width: 48rem; margin: 0 auto; animation: scaleIn 1s ease-in-out;">
+                <h1 style="font-size: 3.75rem; font-weight: bold; margin-bottom: 1.5rem; background: linear-gradient(to right, #a855f7, #ec4899); -webkit-background-clip: text; color: transparent; animation: fadeInUp 1s ease-in-out;">Welcome to My Portfolio</h1>
+                <p style="font-size: 1.5rem; color: #e5e7eb; margin-bottom: 1rem; animation: fadeInUp 1s ease-in-out 0.2s;">I’m Mariya Naqvi, a Third-Year BSc IT Student</p>
+                <p style="font-size: 1.25rem; color: #d1d5db; margin-bottom: 2rem; animation: fadeInUp 1s ease-in-out 0.4s;">
+                    <span style="display: inline-block; min-height: 1.5em; animation: typeText 7s steps(40, end) infinite;">Specializing in AI, Python, Automation, Web Development, and Data Science</span>
+                </p>
+                <a href="#projects" style="display: inline-block; background: linear-gradient(to right, #a855f7, #ec4899); color: #fff; padding: 0.75rem 1.5rem; border-radius: 0.5rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); text-decoration: none; transition: all 0.3s ease; animation: pulse 2s ease-in-out infinite;">View My Projects</a>
+            </div>
         </div>
+        <a href="#about" style="position: absolute; bottom: 2rem; color: #a855f7; animation: bounceWithRotate 1s ease-in-out infinite;">↓</a>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
-            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-               I’m a third-year BSc IT student passionate about technology and software development. I have completed two internships: an On-the-Job Training (OJT) internship in AI and Data Science, where I gained hands-on experience with real-world datasets and machine learning tools, and another internship focused on building a comprehensive AI project involving data visualization, a Streamlit chatbot, and machine learning models. I specialize in automation, web development (frontend and basic backend), and am currently enhancing my Python skills through platforms like Coursera. I’m proficient in tools like Visual Studio Code, Oracle, and MS Office, and I enjoy creating impactful projects to solve real-world problems
+    <section id="about" style="padding: 5rem 1rem; background: #111827; color: #e5e7eb;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2.25rem; font-weight: bold; margin-bottom: 2rem; color: #a855f7;">About Me</h2>
+            <p style="font-size: 1.125rem; max-width: 48rem; margin: 0 auto;">
+                I’m a third-year BSc IT student passionate about technology and software development. I have completed two internships: an On-the-Job Training (OJT) internship in AI and Data Science, where I gained hands-on experience with real-world datasets and machine learning tools, and another internship focused on building a comprehensive AI project involving data visualization, a Streamlit chatbot, and machine learning models. I specialize in automation, web development (frontend and basic backend), and am currently enhancing my Python skills through platforms like Coursera. I’m proficient in tools like Visual Studio Code, Oracle, and MS Office, and I enjoy creating impactful projects to solve real-world problems.
             </p>
         </div>
     </section>
 
-  <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Programming</h3>
-                    <ul class="text-gray-700 list-disc list-inside">
+    <!-- Skills Section -->
+    <section id="skills" style="padding: 5rem 1rem; background: #1f2937;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2.25rem; font-weight: bold; margin-bottom: 2rem; color: #a855f7;">Skills</h2>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 56rem; margin: 0 auto;">
+                <div style="background: #111827; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">Programming</h3>
+                    <ul style="list-style-type: disc; list-style-position: inside; color: #d1d5db;">
                         <li>Python (Intermediate, currently learning)</li>
                         <li>VBA (Automation in MS Excel)</li>
                         <li>HTML, CSS, JavaScript (Frontend Development)</li>
                         <li>Basic Backend (PHP with XAMPP)</li>
                     </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Tools & Platforms</h3>
-                    <ul class="text-gray-700 list-disc list-inside">
+                <div style="background: #111827; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">Tools & Platforms</h3>
+                    <ul style="list-style-type: disc; list-style-position: inside; color: #d1d5db;">
                         <li>Visual Studio Code</li>
                         <li>Oracle</li>
                         <li>XAMPP</li>
@@ -67,9 +75,9 @@
                         <li>Streamlit</li>
                     </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Other Skills</h3>
-                    <ul class="text-gray-700 list-disc list-inside">
+                <div style="background: #111827; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">Other Skills</h3>
+                    <ul style="list-style-type: disc; list-style-position: inside; color: #d1d5db;">
                         <li>Automation (VBA scripts, Python scripts)</li>
                         <li>Web Development (Frontend & Basic Backend)</li>
                         <li>Data Visualization (Python, Excel, Power BI)</li>
@@ -78,74 +86,72 @@
                     </ul>
                 </div>
             </div>
-            </div>
-            </section>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">AI Internship Project: Data Visualization, Chatbot, and ML Models</h3>
-                    <p class="text-gray-700">
-                        During my internship, I completed a multi-task project: (1) Built a Power BI dashboard and performed data analysis on the Amazon Sales dataset using Python (pandas, seaborn). (2) Developed a Streamlit chatbot with a chatting interface using if-else logic, hosted on Streamlit Community Cloud. (3) Created regression and classification ML models using Kaggle datasets, calculating accuracy and error metrics. All code is available on GitHub: <a href="https://github.com/mariyanaqvi/amazon-sales-analysis" class="text-blue-600 hover:underline">Analysis</a>, <a href="https://github.com/mariyanaqvi/streamlit-chatbot" class="text-blue-600 hover:underline">Chatbot</a>, <a href="https://github.com/mariyanaqvi/ml-models" class="text-blue-600 hover:underline">ML Models</a>. Chatbot demo: <a href="https://your-chatbot-app.streamlit.app" class="text-blue-600 hover:underline">Live Demo</a>.
+    <section id="projects" style="padding: 5rem 1rem; background: #111827;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2.25rem; font-weight: bold; margin-bottom: 2rem; color: #a855f7;">My Projects</h2>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                <div style="background: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">AI Internship Project: Data Visualization, Chatbot, and ML Models</h3>
+                    <p style="color: #d1d5db;">
+                        During my internship, I completed a multi-task project: (1) Built a Power BI dashboard and performed data analysis on the Amazon Sales dataset using Python (pandas, seaborn). (2) Developed a Streamlit chatbot with a chatting interface using if-else logic, hosted on Streamlit Community Cloud. (3) Created regression and classification ML models using Kaggle datasets, calculating accuracy and error metrics. All code is available on GitHub: <a href="https://github.com/mariyanaqvi/amazon-sales-analysis" style="color: #a855f7; text-decoration: none;">Analysis</a>, <a href="https://github.com/mariyanaqvi/streamlit-chatbot" style="color: #a855f7; text-decoration: none;">Chatbot</a>, <a href="https://github.com/mariyanaqvi/ml-models" style="color: #a855f7; text-decoration: none;">ML Models</a>. Chatbot demo: <a href="https://your-chatbot-app.streamlit.app" style="color: #a855f7; text-decoration: none;">Live Demo</a>.
                     </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">AI Sales Prediction Model</h3>
-                    <p class="text-gray-700">
+                <div style="background: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">AI Sales Prediction Model</h3>
+                    <p style="color: #d1d5db;">
                         Developed during my OJT internship in AI and Data Science, I built a sales prediction model using Python and libraries like pandas and scikit-learn. Analyzed a sales dataset, performed data cleaning, and applied machine learning algorithms to predict future sales trends.
                     </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Python Learning Journey</h3>
-                    <p class="text-gray-700">
+                <div style="background: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">Python Learning Journey</h3>
+                    <p style="color: #d1d5db;">
                         I’m currently taking a Python course on Coursera, where I’ve learned to write scripts, debug code, and create small projects like a calculator and data visualizations.
                     </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-                    <p class="text-gray-700">
-                        This website! Built with HTML, Tailwind CSS, and JavaScript to showcase my skills and projects.
+                <div style="background: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">Portfolio Website</h3>
+                    <p style="color: #d1d5db;">
+                        This website! Built with HTML, CSS, and JavaScript to showcase my skills and projects.
                     </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Weather App with Python</h3>
-                    <p class="text-gray-700">
+                <div style="background: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">Weather App with Python</h3>
+                    <p style="color: #d1d5db;">
                         A small Python project where I used an API to fetch and display weather data for any city. Built while learning on Coursera, it helped me understand APIs and data handling.
                     </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Excel Automation with VBA</h3>
-                    <p class="text-gray-700">
+                <div style="background: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #ec4899;">Excel Automation with VBA</h3>
+                    <p style="color: #d1d5db;">
                         Created a VBA script to automate data formatting and calculations in Excel, saving time on repetitive tasks. Used variables with Dim statements to manage data efficiently.
                     </p>
                 </div>
             </div>
-               
-                
-
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-blue-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
-            <p class="text-lg mb-4">Email: mariyanaqvi672@gmail.com</p>
-            <p class="text-lg">LinkedIn:<a href="https://www.linkedin.com/in/mariya-naqvi-9a7198285" class="hover:underline">mariya-naqvi-9a7198285</a>
-            </p>
         </div>
     </section>
 
-    
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 5rem 1rem; background: linear-gradient(to right, #1e1b4b, #312e81); color: #e5e7eb; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 2.25rem; font-weight: bold; margin-bottom: 2rem; color: #a855f7;">Contact Me</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 1rem;"><span style="margin-right: 0.5rem;">✉️</span>Email: <a href="mailto:mariyanaqvi672@gmail.com" style="color: #a855f7; text-decoration: none;">mariyanaqvi672@gmail.com</a></p>
+            <p style="font-size: 1.125rem; margin-bottom: 1rem;"><span style="margin-right: 0.5rem;">🔗</span>LinkedIn: <a href="https://www.linkedin.com/in/mariya-naqvi-9a7198285" style="color: #a855f7; text-decoration: none;">mariya-naqvi-9a7198285</a></p>
+            <p style="font-size: 1.125rem;"><span style="margin-right: 0.5rem;">📄</span><a href="resume.pdf" style="color: #a855f7; text-decoration: none;">Download My Resume</a></p>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4 text-center">
-        <p>&copy; 2025 Mariya Naqvi. All rights reserved.</p>
-        <p><a href="https://mariyanaqvi.github.io" class="text-blue-300 hover:underline">GitHub Profile</a></p>
+    <footer style="background: #1f2937; color: #d1d5db; padding: 1.5rem; text-align: center;">
+        <p>© 2025 Mariya Naqvi. All rights reserved.</p>
+        <p><a href="https://github.com/mariyanaqvi" style="color: #a855f7; text-decoration: none;">GitHub Profile</a></p>
     </footer>
 
-    <!-- JavaScript for Smooth Scrolling -->
     <script>
+        // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -154,6 +160,84 @@
                 });
             });
         });
+
+        // Add Shadow to Navbar on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 10px 20px rgba(168, 85, 247, 0.3)';
+            } else {
+                navbar.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+            }
+        });
     </script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #111827;
+            margin: 0;
+            color: #e5e7eb;
+        }
+        a:hover {
+            color: #ec4899 !important;
+            transform: scale(1.05);
+        }
+        div[style*="transition: all 0.3s ease"]:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3) !important;
+        }
+        @media (min-width: 768px) {
+            section div[style*="grid-template-columns: 1fr;"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            section#skills div[style*="grid-template-columns: 1fr;"] {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+            h1[style*="font-size: 3.75rem"] {
+                font-size: 4.5rem !important;
+            }
+            p[style*="font-size: 1.5rem"] {
+                font-size: 1.875rem !important;
+            }
+            p[style*="font-size: 1.25rem"] {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInPattern {
+            0% { opacity: 0; }
+            100% { opacity: 0.5; }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounceWithRotate {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(0deg); }
+            40% { transform: translateY(-15px) rotate(10deg); }
+            60% { transform: translateY(-7px) rotate(-10deg); }
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(168, 85, 247, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0); }
+        }
+        @keyframes scaleIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes typeText {
+            0% { width: 0; }
+            50% { width: 100%; }
+            100% { width: 0; }
+        }
+        span[style*="animation: typeText"] {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #a855f7;
+        }
+    </style>
 </body>
 </html>
